@@ -1,0 +1,188 @@
+body{
+	width: 100%;height: 100%;
+}
+#pag1{
+	padding-top: 25px;
+	background: url(../img/bg_pg2.png) repeat-y;
+	background: cover;
+}
+.navbar-default{
+	opacity: 0.9;
+}
+.logo img{
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 10px;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+	font-weight: bold;
+	font-size: 25px;
+	color: #40D2B1;
+}
+.navbar-nav>li>a{
+	font-weight: bold;
+}
+.navbar-nav>li>a:hover{
+	background: url(../img/h.png) no-repeat;
+}
+/*第一屏幕*/
+#menu .active a {
+	background: url(../img/h.png) no-repeat;
+}
+
+/*第二屏*/
+#pag2 .container{
+	background: url(../img/bg2.png);
+}
+.ccc{
+    position: absolute;
+    bottom: 20px;
+    left: 15%;
+}
+.tab_1{
+	width: 100%;
+	background: #f1f1f1;
+	margin-left: 20px;
+	 box-shadow: 1px 1px 4px #ccc;
+	 padding:0 20px;
+	 border-radius:20px ;
+	 text-align: center;
+}
+.tab_1 h2{
+	font-size: 25px;
+}
+.tab_2{
+	width: 100%;
+	
+	background: #f1f1f1;
+	margin-left: 20px;
+	 box-shadow: 1px 1px 4px #ccc;
+	 padding:0 20px;
+	 border-radius:20px ;
+	 text-align: center;
+}
+.tab_1:hover{
+	 box-shadow: 1px 2px 10px #ccc; 
+}
+.tab_2:hover{
+	 box-shadow: 1px 2px 10px #ccc; 
+}
+/*第三屏*/
+
+
+.tab_3 h2{
+	line-height: 100px;
+}
+
+.tab_more{
+	padding:0 4px;
+	background: #F0F0F0;
+	box-shadow: 1px 2px 10px #ccc;
+	text-align: center;
+	border-radius:10px;
+	margin:10px ;
+}
+.container{
+	background: url(../img/bg2.png);
+}
+#pag3 .container{
+	padding-top: 40px;
+}
+
+/*第四屏幕*/
+#pag4{
+	background: url(../img/bg_pg3.png) repeat-y;
+	background-size: cover;
+}
+.lpp-img img{
+	width: 80%;
+	-webkit-transition:all 1s; 
+	-webkit-transform: rotateY(0deg);
+}
+.lpp-img {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	/*background: #1B6D85;*/
+	border-radius: 50%;
+	border: 5px solid #080808;
+	perspective: 500px;
+	transform-style: preserve-3d;
+}
+.lpp-img:hover{
+	border: 12px solid #080808;
+	
+}
+.lpp-img img:hover{
+	-webkit-transform: rotateY(360deg);
+	
+}
+.lpp-text h2{
+	text-align: center;
+	font-weight: bold;
+}
+.lpp-text{
+	border: 3px solid #262626;
+	border-radius: 10% 10% 100% 100%;
+	padding: 0 10px 50px 10px;
+	margin-top: 10px;
+	transform-style:preserve-3d ;
+}
+.lpp-text:hover{
+	box-shadow: 1px 1px 10px #222222;
+	transform: rotateY(360deg);
+}
+
+
+/*第五屏幕*/
+#pag5{
+	background: url(../img/bg_pg4.png) ;
+}
+/*第六屏幕*/
+#pag6{
+	background: url(../img/map.png);
+	background-size: cover;
+}
+.lvjin{
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.7);
+	
+}
+.tel-text{
+	padding-top:10% ;
+	color: white;
+}
+.tel-text p{
+	line-height: 25px;
+    margin-bottom: 20px;
+}
+.tel-text .form-control {
+    border: none;
+    border-radius: 0;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.tel-text  textarea.form-control {
+    height: auto;
+}
+.tel-text input[type='submit'] {
+    background: #40D2B1;
+    color: #fff;
+    font-weight: bold;
+ }
+ .tel-text input[type='submit']:hover{
+ 	background: #2c8e78;
+ }
+ 
+*{ box-sizing:border-box;}
+.imgBox{ transform-style: preserve-3d; position: relative; width:100px; height: 100px; margin:200px auto 0;  top: -100px;}
+.imgBox img{width:100%; height: 100%; position: absolute; top:0; transition: transform 1s linear; cursor: pointer;
+border-radius: 10px; box-shadow: 1px 1px 1px 1px #222;}
+@keyframes xzmm{
+	from{ transform: perspective(400px) rotateY( 0deg) translateZ(300px);}
+	to{ transform: perspective(400px) rotateY( 360deg) translateZ(300px);}
+	}
+.imgBox img.sel{ box-shadow: 0 0 3px 1px #00BCD4;}
+
