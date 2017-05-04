@@ -1,0 +1,296 @@
+A:
+|
+article 用来在页面上表示一套完整并且独立的部分
+	可以用来呈现论坛的一个帖子   一篇文章  一篇博客 用户提交的评论内容 可互动的页面挂件
+
+aside    元素标签可以包含与当前页面或者主要内容相关的应用、侧边栏、广告、nav元素组
+	1：被包含在<article>中作为主要内容的附属信息部分   以当前文章有关的引用、词汇列表等
+	2：在<article>之外使用，作为页面或站点 全局的附属信息部分，最典型的形式是以侧边栏（sidebar），其中的内容可以是友情链接、附属导航或者广告单元等
+
+B:
+|
+
+background：
+	background-position  背景图定位
+	x:	
+		left
+		center
+		right
+	y:
+		top
+		center
+		bottom
+	background-attachment:fixed 背景图位置固定
+	border-top:none;去掉上边框
+
+
+C:
+|
+color:
+	1:关键字   
+	2：rgb( , , )0~255
+	3：十六进制 颜色编码
+
+D:
+|
+	dashed 虚线  dotted 点线
+
+	dl 定义列表
+	dt 定义列表的项目
+	dd 对dt展开的描述扩展
+
+	display：inline-block
+	1：块元素能在一行显示
+	2：行内属性标签支持宽高
+	3：没有宽度的时候内容撑开宽高
+
+
+E:
+|
+em	强调一个词或者一段话（斜体）
+
+
+F:
+|
+font：
+	font-size:文字大小
+	font-weight ：bold 加粗   normal正常
+	font-style：italic   斜体  normal  正常 
+	行间距：line-height :..px;
+	字体 ：
+		font-family:"宋体"；
+	复合样式 :font  
+	font :font-weight font-style font-size/line-height font-family
+	font (必须要写): font-size font-family
+
+float/文档流/浮动
+
+	float：left|right|none|inherit(继承)；
+	clear：：left|right|none|inherit(继承)；不能有浮动；
+
+footer 页面底部或者板块（）section底部 
+
+form 表单
+	<form action=""></form> action为地址
+	
+	<input type="" name=""value="">
+		type ：类型
+		name :告诉后端提交的表单
+		value ：默认设置的东西
+	text 文本框
+	password 密码
+	radio 单选
+	checkbox 复选
+	submit 提交
+	reset 重置
+	button 按钮
+	image 图片
+	file 上传
+	hidden 隐藏
+
+G:
+H:
+|
+herf:
+	<a href="www.hao123.com"> baidu </a>
+	herf 页面链接  
+	     压缩包下载 
+	     写的是个id 的话  会直接跳到id所在的区域  锚点  
+		<a herf="网页/#id">链接名</a>
+	     新窗口打开
+		target="_blank"
+		target="_self"当前窗口打开 
+	      <base target="_balank" herf="链接  " >
+
+header    页面头部  或者板块section头部
+
+I:
+<img src="ing.ipg"/>
+
+	相对路径   相对web文件的地址  "../"返回上级目录 
+ 
+ 
+ 
+	绝对路径（x区 xx路xx号   具体  ） 
+	  
+	-线上的绝对路径
+	-线下
+J:
+k:
+l:
+M:
+|
+margin: 外边距  （元素边框之外 不显示元素背景）
+	margin 叠加为大的一方  
+	margin传递  子元素会传递给父ji
+	margin: 0 auto；
+
+N：
+|
+nav 	导航 （包含链接的一个列表）
+
+O:
+|
+opacity：属性值（0.0-1.0）
+	|
+	1、一旦给父级加了透明度  子级也继承
+ 
+   	z-index：数字；定位层级
+    	1、定位元素后者默认高于前者
+    	2、在兄弟标签之间比较层级
+
+  	IE 下设置透明度
+	filter：alpan（opacity:0~100）
+	IE 6、7下的透明度设置
+
+p:
+|
+padding: 内填充 (上px  右px 下px 左px)
+
+position：
+	相对定位position：relative
+	|
+	1、不影响 元素本本身的特性
+	2、位移以后原始位置被保留
+	3、如果没有位移便宜量，对元素本身没有任何影响
+
+	绝对定位position：absolute
+	|
+	1、使元素完全脱离文档流	
+	2、使内嵌支持宽高
+	3、块属性标签内容撑开宽度
+	4、如果有定位父级相对于定位父级发生偏移，
+   	没有相对父级相对于可视区域发生偏移
+	5、相对定位一般都是配合绝对定位元素使用
+	6、提升层级
+
+	固定定位position：fixed
+	与绝对定位特征基本一致，差别是相对于可是区域进行定位
+
+
+q:
+r:
+s:
+|
+section   板块  用于划分页面上的不同区域
+strong 	强调一个词或者一段话（加粗）不换行
+
+
+t:
+|
+text：
+	1：首行缩进  text-intdent   :1：XX px  2: 2em(2个文字大小);
+	2: 对齐方式  text-align:(left/center/right);
+	3：文本修饰  text-decoration：underline  （下划线）  line-through（文字删除线 ）overline  (上划线)  
+	4：字间距    letter-spacing:5px   字母间距 
+	5：单词间距  word-spacing:5px   
+
+table 表格
+	thead 表头
+	tbody  表格主题
+	tfoot 表格页脚
+	tr 表格行
+	td 表格数据单元格
+	th  表格标题单元格
+	 
+	<table border="1"></table> 表格的边框
+ 	table{ border-collapse:collapse;} 单元格间隙合并
+	th,td{padding:0;}重置单元格默认填充
+
+	表格单元格合并
+	
+	行单元格合并：
+	<th colspan="2">
+	列单元格合并：
+	<td rowspan="2">
+u:
+v:
+w:
+x:
+y:
+z:
+
+
+css盒子模型  
+	margin	
+   	   border
+              padding
+		 content
+	互相包含
+
+
+  
+
+
+列表
+	ul 无序列表
+	ol 有序列表
+	li ul或者ol的应用
+
+
+
+选择器  
+
+	.box{样式 }
+	.box{内选择器}
+	<div class="box">div1</div>
+	<p class="box box2">div2</div>
+	<div class="box">div3</div>
+	|
+	类型选择 （选择所需要标签）
+	|
+	包含选择器
+	#box p{样式}
+	|
+	群组选择
+	div,span{样式}（，的意思是和）
+	<div>div1</div>
+	<div>div2</div>
+	<span>span1</span>
+	<span>span2</span>
+	|
+	通配符
+	*{样式}
+
+
+	标签的默认样式
+	body {}
+	ol,ul  {list-style::none}清除默认样式
+
+
+
+选择器的优先级
+
+	1：选择器的优先级（一致）的情况下，后面的样式会覆盖前面的样式
+	|
+	2：行间样式>id>内选择class>类型选择的优先级>通配
+
+
+块和内嵌
+	
+	块：
+	   1：独占一行
+ 	   2：支持所有的样式
+	   3：不设置宽度的时候宽度盛满整行
+	
+	内嵌：
+	   1：可以在一行显示
+	   2：不支持宽高，对上下的margin和padding等样式支持也有问题 
+	   3：宽度由内容撑开
+	   4：代码换行或被解析
+
+ 
+
+
+
+
+
+
+
+divcss5.com
+
+
+
+
+
+

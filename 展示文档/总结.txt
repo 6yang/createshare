@@ -1,0 +1,80 @@
+字符串方法总结
+
+var str = '妙味课堂-WWW.miaov.com';
+
+str.charAt(1);			// '味'
+	查找 
+str.charCodeAt(1);			// 21619
+	变成编码
+String.fromCharCode(22937, 21619);	// '妙味'
+	将编码变成字符
+
+str.indexOf('m', 4);			// 9
+	可返回某个指定的字符串值在字符串中第几次出现的位置
+str.lastIndexOf('o');			// 16
+
+'1000' < '2'			// true
+'1000' > 2			// true
+
+str.substring(0, 4);			// '妙味课堂'
+str.slice(-3);			// 'com'
+
+str.toUpperCase();			// '妙味课堂-WWW.MIAOV.COM'
+str.toLowerCase();			// '妙味课堂-www.miaov.com'
+
+str.split('.', 2);			// [ '妙味课堂-WWW', 'miaov' ]
+str.split('');    字符串变成数组
+
+var arr = [ 'www', 'miaov', 'com' ];
+arr.join('aaa');			// 'www.miaov.com'
+
+
+数组方法总结
+
+arr.splice(删除，替换，添加)；
+
+arr.sort();
+	对数组排序
+		默认情况下都是以字符串形式排序的
+	排序方法：
+		快速
+		希尔	
+		冒泡
+		归并
+		选择
+		插入
+	
+随机数
+	x-y
+	Math.round(Math.random()*(y-x)+x);
+	
+arr1.concat(arr2,arr3);
+	将多个数组连成一个
+arr.reverse();
+	将一个数组元素倒置
+	将一个 字符串倒置
+	var str = 'asdasdas';
+	str.split('').reverse().join(''); 
+	// 先将字符串变成数组再倒置再将数组变为字符串
+
+
+* A:新建 ctrl + n
+* B:格式化  ctrl+shift+f
+* C:导入包  ctrl+shift+o 
+* D:注释  ctrl+/,ctrl+shift+/,ctrl+shift+\
+* E:代码上下移动 选中代码alt+上/下箭头
+* F:查看源码  选中类名(F3或者Ctrl+鼠标点击)
+* G:查找具体的类 ctrl + shift + t
+* H:查找具体类的具体方法 ctrl + o
+* I:给建议 ctrl+1,根据右边生成左边的数据类型,生成方法
+* J:删除代码 ctrl + d
+* K:抽取方法alt + shift + m 
+* L:改名alt + shift + r 
+* 
+
+
+
+
+<meta name="viewport"  content="width = device-width,initial-scale = 1>
+<link rel="stylesheet" type="text/css" media = "screen and (max-device-width:400px)"
+herf="dasd.css"/>

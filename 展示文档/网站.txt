@@ -1,0 +1,68 @@
+http://www.iconfont.cn/   图标网站
+http://mashupcloud.cn/#api   api
+
+css88.com
+	http://www.css88.com/tool/flexboxfroggy/#zh-cn 
+		弹性盒模型演示界面
+	http://www.css88.com/archives/5744
+		flex-box 指南
+
+
+ Axure教程 
+http://www.chuanke.com/v1358445-199551-1164822.html
+
+
+
+创意网站
+http://jz.faisco.com/pro8.html?_ta=168
+
+http://www.sj33.cn/digital/wysj/201606/45573.html  
+
+
+
+
+background
+http://kirichik.com/images/desktop.jpg
+
+
+
+网页404错误的图片
+http://www.sj33.cn/digital/wysj/201606/45545.html   
+http://www.sj33.cn/digital/wysj/201604/45209.html
+
+
+网页图标
+http://www.sj33.cn/sc/png/201203/30648.html
+
+
+丢哪了网站
+http://www.diunal.com/post.html?act=post&id=1
+
+
+http://www.helloweba.com/demo/seat/
+jQuery  电影选座
+
+
+
+git
+http://www.bootcss.com/p/git-guide/
+
+
+
+
+豆花   http://www.yipindh.cn/gy.html
+
+
+页面加载动画
+http://www.helloweba.com/view-blog-310.html
+
+背景平铺的幻灯片插件FourBoxes
+http://www.jq22.com/jquery-info462
+
+
+superslide.js 
+http://www.lanrentuku.com/down/js/jiaodiantu-885/
+
+
+fullpage.js
+https://segmentfault.com/a/1190000002603964

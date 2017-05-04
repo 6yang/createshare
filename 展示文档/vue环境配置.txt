@@ -1,0 +1,34 @@
+1.安装webpack:(全局安装) //查看版本:webpack -v
+    npm install webpack -g
+2.安装vue.js //查看版本:vue -V
+    npm install vue -g
+        
+3.安装vue命令行工具
+    npm install -g vue-cli
+4.创建项目：
+    vue init webpack es6
+    Project name es6
+Project description es6
+Author tao
+Use ESLint to lint your code? n   //一定选no
+Pick an ESLint preset Standard
+Setup unit tests with Karma + Mocha? Yes
+Setup e2e tests with Nightwatch? Yes
+
+ vue-cli · Generated "es6".
+
+ To get started:
+
+   cd es6
+   npm install
+   npm run dev
+
+ Documentation can be found at https://vuejs-templates.github.io/webpack
+#长时间不响应就按ctr+c
+5.cd es6
+6.安装package.json中的插件,cd es6
+npm install
+
+7.运行
+npm run dev
+8.浏览器访问:http://localhost:8080                    
