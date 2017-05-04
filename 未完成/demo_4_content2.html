@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/demo_1.css" />
+	</head>
+	<body>
+		<!--导航-->
+		<nav class="navbar navbar-default ">
+			<div class="container" >
+				<!--小屏幕按钮和导航logo-->
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Liuang Admin</a>
+				</div>
+				<!--小屏幕按钮和导航logo-->
+				
+				<!--导航-->
+				<div class="navbar-collapse collapse" >
+					<ul class="nav navbar-nav ">
+						<li ><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+						<li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;标签管理</a></li>
+						
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    					admin
+		    					<span class="caret"></span>
+	 						 	</a>
+							  	<ul class="dropdown-menu" aria-labelledby="dLabel">
+							   	<li><a href="#"><span class="glyphicon glyphicon-th"></span>&nbsp;前台首页</a></li>
+							   	<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;个人主页</a></li>
+							   	<li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;个人设置</a></li>
+							   	<li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;账户中心</a></li>
+							   	<li><a href="#"><span class="glyphicon glyphicon-star"></span>&nbsp;我的收藏</a></li>
+							  	</ul>
+							</li>
+						
+						<li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+					
+					</ul>
+				</div>
+				<!--导航-->
+			</div>
+		</nav>
+		<!--导航-->
+		
+		<!--内容-->
+		<div class="container">
+			<div  class="row">
+				<div class="col-md-2">
+					<div class="list-group">
+						<a href="#" class="list-group-item ">内容管理</a>
+						<a href="#" class="list-group-item active">添加内容</a>
+						
+					</div>
+				</div>
+				<div class="col-md-10">
+					<div class="page-header">
+						<h4>内容管理</h6>
+					</div>
+					<ul class="nav nav-tabs">
+						<li >
+							<a href="#">内容管理</a>
+						</li >
+						<li  class="active">
+							<a href="#">添加内容</a>
+						</li >
+						
+					</ul>
+					<form action="#" class="user_search">
+						<div class="form-group">
+							<label for="name">标题</label>
+							<input type="text" id="name" class="form-control" placeholder="请输入标题内容"/>
+						</div>
+						<div class="form-group">
+							<label for="name">文章内容</label>
+							<textarea class="form-control" rows="15" placeholder="请输入内容"></textarea>
+						</div>
+						<div class="checkbox">
+							
+							<label for="name"><input type="checkbox" id="name"  />全局置顶</label>
+							<button type="submit" class="btn btn-default pull-right" >发表文章</button>
+						</div>
+						
+					</form>
+				</div>	  
+				</div>
+			</div>
+		</div>
+		<!--内容-->
+		
+		<!--footer-->
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p>Copyright&nbsp;© 2012-2018&nbsp;www.yangyang.com &nbsp; 陕ICP备13014270号-4</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--footer-->
+		
+		
+	</body>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="js/Chart.js" ></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+	
+
+</html>

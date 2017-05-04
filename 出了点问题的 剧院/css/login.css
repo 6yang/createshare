@@ -1,0 +1,13 @@
+* {margin: 0; padding: 0;}
+body{background: url(../img/login/timg.jpg) no-repeat;width: 100%;height: 100%;background-size: 100%; position: fixed;}
+#lg{  border: 2px solid gainsboro;position: absolute;top: 20%;right: 10%;border-radius: 20px;box-shadow: 6px 6px 6px 6px #808080;}
+#lg1{border-bottom: 2px solid gray ;background-color: gainsboro;height: 80px;border-radius: 20px 20px 0  0 ;text-align: center;opacity: 0.5;}
+#lg1 span{line-height: 80px ; font-family: "微软雅黑";font-size: 50px;letter-spacing: 20px;}
+
+#lg form{text-align: center; padding: 50px;}
+#lg form input{ padding: 10px; margin: 10px; border: 1px solid gainsboro;border-radius: 5px;
+width: 400px;color: white;}
+#lg button{width: 400px;margin: 10px; }
+
+#logo{width: 400px;height: 300px; position: absolute;top: 10%;left: 10%;}
+

@@ -1,0 +1,28 @@
+
+.xinxi{
+	width: 600px;
+	height: 520px;
+	margin: 40px auto;
+	background: url(../img/art.png);
+	border: 1px solid #6A6A6A;
+	border-radius: 30px;
+	padding: 0 20px;
+}
+.nav{
+	width: inherit;
+	height: 40px;
+	padding: 20px 0px;
+	border-bottom: dashed;
+	text-align: center;
+	font-size: 30px;
+	font-family: "微软雅黑";
+	color: #000000;
+}
+.cont{
+	margin: 20px 80px;
+	
+}
+
+.item{
+	margin: 15px ;
+}

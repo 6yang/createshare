@@ -1,0 +1,94 @@
+*{margin: 0; padding: 0;}
+
+#nav img{height: 80px;}
+#nav{width: 100%; height: 80px; background:#333333; }
+#nav img{width: 30%;}
+#nav_txt {position: absolute;right: 5%;top: 0;height: 80px; text-align: center;}
+#nav_txt span a{color: white;font-family: "微软雅黑";line-height: 80px; font-size: 10%;}
+.nav_search{height: 50px; width: 25%; position: absolute;top: 15px; right: 15%;background: whitesmoke;border-radius: 25px;border: none;}
+.nav_search input{height: 50px; background: whitesmoke;border: white;outline: none;position: absolute;left: 30px;width: 70%;}
+.nav_search button{ height: 50px; position: absolute;right: 0;border-radius: 0 25px 25px 0; width: 20%; background: green;border: 3px;opacity: 0.8; color: white;box-shadow: 2px #808080;outline: none;}
+.nav_search button:hover{background: green;opacity: 0.6;}
+
+#content{height: 1200px;width: 100%; background:url(../img/bg.png);}
+.con_left{height:1200px;width: 15%; display: inline-block;position: absolute; top: 80px;}
+.con_right{height: 1200px;width: 84%; display: inline-block;position: absolute;right: 0px;padding: 25px;}
+.foot{width: 100%; height: 30px; background: black;text-align: center;}
+.foot span{line-height: 30px; font-family: "微软雅黑"; color: darkgray;}
+/*导航标签*/
+.con_nav{height: 100px; width:300px; background:#000000;border-radius: 0 60px 60px 0;opacity: 0.5;text-align:-webkit-right;text-align:-webkit-right;-webkit-transition:width 1s;}
+.con_nav a{text-decoration: none;line-height: 100px;color: #FFFFFF;font-family: "微软雅黑";font-size: 1.5em;}
+.con_nav:hover{width: 400px; opacity: 0.8;font-weight: bolder;border-left: 10px solid whitesmoke;}
+
+#con_nav1{position: fixed; top: 20%; left:0px;width: 400px; opacity: 0.8;font-weight: bolder;border-left: 10px solid whitesmoke;}
+#con_nav2{position: fixed; top: 32%; left:0px;}
+#con_nav3{position: fixed; top: 44%; left:0px;}
+#con_nav4{position: fixed; top: 56%; left:0px;}
+/*新片速递*/
+.r_content{width: 100%; height: 100%; border-radius:50px;padding: 32px;}
+.con_movie{width: 18%; height: 500px; display: inline-block;margin: 15px;border: 2px solid grey;border-radius: 25px;padding: 25px; background: whitesmoke;}
+.con_movie img{width: 100%;height: 400px;}
+.movie_txt {height: 100px; text-align: center;}
+.movie_txt a{line-height: 80px;text-decoration: none;font-size: 2em;color:black;font-family: "微软雅黑";}
+
+/************************************************/
+/*在线选座*/
+.buy_content{width: 100%; height: 100%;padding:0 32px;position: relative;display: none;}
+
+
+/**  选择日期 **/
+.buy_nav{width: 100%;height: 40px;background: url(../img/nbg.jpg); border-radius: 20px;position: absolute;top: 0;left: 0;}
+.buy_nav_button:hover{ background: url(../img/nbgp.jpg);}
+.buy_nav_button{display: inline-block; width: 24%;height: 40px; text-align: center;}
+.buy_nav_button a{text-decoration: none;color: whitesmoke; font-size: 2em;font-family: "微软雅黑";line-height: 40px;}
+.buy_movie{display: none;position: relative;top: 60px;}
+.ch_li{position: absolute;bottom: -80px;left: 700px;}
+/* 选择电影时间*/
+
+
+.choice_date{width: 100%; height: 1000px;padding:0 32px;background: white;margin-top:30px;padding-top: 30px; box-shadow: 20px 20px 20px #000000;border-radius: 30px;position: absolute;top: 30px;left: 0;  display: none;}
+.choice_date tr{height: 60px ;text-align: center; }
+.choice_date th{text-align: center;}
+/*表格*/
+.buy_bt{width: 100px;height: 40px; background: #5db6e0;color: white; border: none;border-radius: 5px;} 
+.buy_time{color: #f18861;}
+.by_money{color: #f18861;}
+.bt_seat{height: 40px;width: 40px; border:none; border-radius: 5px;background: #779d71;color: white;}
+.buy_seat{color: #779d71;}
+/*导航*/
+.buy_pag{position: absolute;bottom:0px;left: 800px;}
+
+/* 选择电影的座位*/
+.choice_seat{width: 100%; height: 1000px;padding:0 32px;background: white;margin-top:30px;padding-top: 30px; box-shadow: 20px 20px 20px #000000;border-radius: 30px;position:absolute; top: 30px;left:0;
+display: none;}
+.seat_bt{width: 60%; height: 900px;background: white;display: inline-block;position: absolute;top: 30px;}
+
+.movie_screen{width: 600px; height: 40px;background:#f0f0f0; border-radius: 10px;position: absolute;top: 			30px;left: 250px;text-align: center;}
+.movie_screen span {line-height: 40px; font-family: "微软雅黑";color: #808080;}
+.seat_map{width: 800px; height: 800px;  position: absolute; left: 150px;top: 100px;
+			padding: 30px;text-align: center;}
+.map_bt{width: 50px; height: 50px;margin: 10px;background: #b9dea0;border: none;border-radius: 10px; text-decoration: none;}
+.map_bt:hover{background: #76b474;}
+/*买票单子*/
+
+.seat_price{width: 39%; height: 900px; display: inline-block;position: absolute;top: 30px; right: 30px; border-left: 2px dotted #808080;padding: 150px; }
+.checkout-button{height: 50px;width: 120px;border: none;background: #5DB6E0;color: white;border-radius: 6px;}
+/*购买成功*/
+.ticket_suss{width: 100%; height: 1000px;padding:0 32px;background: white;margin-top:30px;padding-top: 30px; box-shadow: 20px 20px 20px #000000;border-radius: 30px;position:absolute; display: none;top: 30px; left: 0;}
+.img_bt {position: absolute; top: 350px; left: 700px;}
+.ticket_suss span{font-size: 80px;font-family: "微软雅黑";}
+/* 剧目管理*/
+.movie_manage{width: 100%; height: 100%; border-radius:50px;padding: 32px;position: relative; display: none;}
+.movie_manage_on{width: 100%; height: 1100px;padding:0 32px;background: white; box-shadow: 20px 20px 20px #000000;border-radius: 30px;position: absolute;top: 30px;left: 0;  }
+.add_movie_table th{text-align: center;}
+.add_movie_table td{text-align: center;}
+.drap_bt{width: 100px;height: 40px;border: none; border-radius: 5px;background: #F18861;color: #FFFFFF;box-shadow: 3px 3px 3px #666666; }
+.add_movie_table .buy_time{color: #000000;}
+
+.add_m td input{width: 150px;border: 1px solid #808080;padding-left:5px;}
+.add_bt{background: #76B474;width: 100px;height: 40px;border: none; border-radius: 5px;color: #FFFFFF;box-shadow: 3px 3px 3px #666666; }
+/*演出厅管理*/
+.hall_manage{width: 100%; height: 100%; border-radius:50px;padding: 32px;position: relative;display: none;}
+.hall_manage_on{width: 100%; height: 1100px;padding:0 32px;background: white; box-shadow: 20px 20px 20px #000000;border-radius: 30px;position: absolute;top: 30px;left: 0;}
+.hall_manage_on tr{text-align: center;}
+.hall_manage_on th{text-align: center;}

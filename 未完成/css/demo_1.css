@@ -1,0 +1,43 @@
+
+body{
+	 font-family: "Microsoft YaHei",sans-serif;
+	 padding-bottom:50px ;
+}
+/*进度条下边距*/
+.progress{
+	margin-bottom: 15px;
+}
+/*头像*/
+.wh64{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+}
+.mar_t15{
+	margin-top: 15px;
+}
+/*footer*/
+#footer {
+	text-align: center;
+	font-weight: 400px;
+	padding: 20px;
+}
+
+/*用户管理*/
+.page-header h4{
+	font-size: 16px;
+}
+.page-header{
+	margin-top: 0px;
+}
+.nav-tabs>li>a{
+	color: #555555;
+} 
+.nav_bb{
+	text-align: center;
+}
+.user_search{
+	padding: 10px;
+    border: solid 1px #ddd;
+    border-top: none;
+}
