@@ -53,11 +53,21 @@ color: #FFFFFF;
 	width: 100%;
 	padding: 10px 20px;
 }
-#tel table th,td,caption{
-	text-align: center;
+#tel table th{
+	padding-left: 15%;
 	font-size: 25px;
+}
+#tel table td {
+	padding-left:20% ;
+	font-size: 25px;
+}
+#tel table td,thead th{
+	width: 50%;
+	text-align: left;
 }
 
 #tel table caption{
+	text-align: center;
 	font-size: 30px;
+	font-weight: bold;
 }
