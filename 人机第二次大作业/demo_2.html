@@ -18,37 +18,36 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a href="#" class="navbar-brand">Liuang Admin</a>
+					<a href="#" class="navbar-brand">特特特影院后台管理系统</a>
 				</div>
 				<!--小屏幕按钮和导航logo-->
 				
 				<!--导航-->
 				<div class="navbar-collapse collapse" >
 					<ul class="nav navbar-nav ">
-						<li ><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
-						<li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;标签管理</a></li>
+						<li ><a href="demo_1.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+						<li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;剧目管理</a></li>
+						<li><a href="demo_4_content.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;演出厅管理</a></li>
+			
 						
 					</ul>
 					
 					<ul class="nav navbar-nav navbar-right">
 							<li class="dropdown">
 								<a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		    					admin
+		    					系统管理员
 		    					<span class="caret"></span>
 	 						 	</a>
 							  	<ul class="dropdown-menu" aria-labelledby="dLabel">
-							   	<li><a href="#"><span class="glyphicon glyphicon-th"></span>&nbsp;前台首页</a></li>
-							   	<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;个人主页</a></li>
-							   	<li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;个人设置</a></li>
-							   	<li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;账户中心</a></li>
-							   	<li><a href="#"><span class="glyphicon glyphicon-star"></span>&nbsp;我的收藏</a></li>
+							   	<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;经理</a></li>
+							   	<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;售票员</a></li>
+							   	
 							  	</ul>
 							</li>
 						
 						<li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
-					
+						
+						
 					</ul>
 				</div>
 				<!--导航-->
@@ -61,40 +60,44 @@
 			<div  class="row">
 				<div class="col-md-2">
 					<div class="list-group">
-						<a href="#" class="list-group-item active">用户管理</a>
-						<a href="#" class="list-group-item">用户搜索</a>
-						<a href="#" class="list-group-item">用户添加</a>
+						<a href="demo_2.html" class="list-group-item active">剧目管理</a>
+						<a href="demo_3_search.html" class="list-group-item">剧目搜索</a>
+						<a href="#" class="list-group-item">剧目添加</a>
 					</div>
 				</div>
 				<div class="col-md-10">
 					<div class="page-header">
-						<h4>用户管理</h6>
+						<h4>剧目管理</h6>
 					</div>
 					<ul class="nav nav-tabs">
 						<li class="active">
-							<a>用户管理</a>
+							<a href="demo_2.html">剧目管理</a>
 						</li>
 						<li  >
-							<a>用户搜索</a>
+							<a href="demo_3_search.html">剧目搜索</a>
 						</li>
 						<li>
-							<a>用户添加</a>
+							<a>剧目添加</a>
 						</li>
 					</ul>
 					<table class="table">
 						<thead>
 							<tr>
-								<th>ID</th>
-								<th>用户名</th>
-								<th>邮箱</th>
+								<th>编号</th>
+								<th>电影</th>
+								<th>类型</th>
+								<th>售价</th>
+								<th>演出厅</th>
 								<th>操作</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<th>1</th>
-								<td>邹丹阳</td>
-								<td>2343324234@qq.com</td>
+								<td>摔跤吧！爸爸</td>
+								<td>剧情</td>
+								<td>30</td>
+								<td>1号演出厅</td>
 								<td>
 									<div class="btn-group">
 									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -103,17 +106,19 @@
 									  <ul class="dropdown-menu">
 									    <li><a href="#">编辑</a></li>
 									    <li><a href="#">删除</a></li>
-									    <li><a href="#">锁定</a></li>
 									    <li role="separator" class="divider"></li>
-									    <li><a href="#">修改密码</a></li>
+									    <li><a href="#">锁定</a></li>
+									   
 									  </ul>
 									</div>									
 								</td>
 							</tr>
 							<tr>
 								<th>2</th>
-								<td>邹丹阳</td>
-								<td>2343324234@qq.com</td>
+								<td>摔跤吧！爸爸</td>
+								<td>剧情</td>
+								<td>30</td>
+								<td>1号演出厅</td>
 								<td>
 									<div class="btn-group">
 									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -122,17 +127,19 @@
 									  <ul class="dropdown-menu">
 									    <li><a href="#">编辑</a></li>
 									    <li><a href="#">删除</a></li>
-									    <li><a href="#">锁定</a></li>
 									    <li role="separator" class="divider"></li>
-									    <li><a href="#">修改密码</a></li>
+									    <li><a href="#">锁定</a></li>
+									   
 									  </ul>
 									</div>									
 								</td>
 							</tr>
 							<tr>
 								<th>3</th>
-								<td>邹丹阳</td>
-								<td>2343324234@qq.com</td>
+								<td>摔跤吧！爸爸</td>
+								<td>剧情</td>
+								<td>30</td>
+								<td>1号演出厅</td>
 								<td>
 									<div class="btn-group">
 									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -141,17 +148,19 @@
 									  <ul class="dropdown-menu">
 									    <li><a href="#">编辑</a></li>
 									    <li><a href="#">删除</a></li>
-									    <li><a href="#">锁定</a></li>
 									    <li role="separator" class="divider"></li>
-									    <li><a href="#">修改密码</a></li>
+									    <li><a href="#">锁定</a></li>
+									   
 									  </ul>
 									</div>									
 								</td>
 							</tr>
 							<tr>
 								<th>4</th>
-								<td>邹丹阳</td>
-								<td>2343324234@qq.com</td>
+								<td>摔跤吧！爸爸</td>
+								<td>剧情</td>
+								<td>30</td>
+								<td>1号演出厅</td>
 								<td>
 									<div class="btn-group">
 									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -160,17 +169,19 @@
 									  <ul class="dropdown-menu">
 									    <li><a href="#">编辑</a></li>
 									    <li><a href="#">删除</a></li>
-									    <li><a href="#">锁定</a></li>
 									    <li role="separator" class="divider"></li>
-									    <li><a href="#">修改密码</a></li>
+									    <li><a href="#">锁定</a></li>
+									   
 									  </ul>
 									</div>									
 								</td>
 							</tr>
 							<tr>
 								<th>5</th>
-								<td>邹丹阳</td>
-								<td>2343324234@qq.com</td>
+								<td>摔跤吧！爸爸</td>
+								<td>剧情</td>
+								<td>30</td>
+								<td>1号演出厅</td>
 								<td>
 									<div class="btn-group">
 									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -179,17 +190,19 @@
 									  <ul class="dropdown-menu">
 									    <li><a href="#">编辑</a></li>
 									    <li><a href="#">删除</a></li>
-									    <li><a href="#">锁定</a></li>
 									    <li role="separator" class="divider"></li>
-									    <li><a href="#">修改密码</a></li>
+									    <li><a href="#">锁定</a></li>
+									   
 									  </ul>
 									</div>									
 								</td>
 							</tr>
 							<tr>
 								<th>6</th>
-								<td>邹丹阳</td>
-								<td>2343324234@qq.com</td>
+								<td>摔跤吧！爸爸</td>
+								<td>剧情</td>
+								<td>30</td>
+								<td>1号演出厅</td>
 								<td>
 									<div class="btn-group">
 									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -198,17 +211,19 @@
 									  <ul class="dropdown-menu">
 									    <li><a href="#">编辑</a></li>
 									    <li><a href="#">删除</a></li>
-									    <li><a href="#">锁定</a></li>
 									    <li role="separator" class="divider"></li>
-									    <li><a href="#">修改密码</a></li>
+									    <li><a href="#">锁定</a></li>
+									   
 									  </ul>
 									</div>									
 								</td>
 							</tr>
 							<tr>
 								<th>7</th>
-								<td>邹丹阳</td>
-								<td>2343324234@qq.com</td>
+								<td>摔跤吧！爸爸</td>
+								<td>剧情</td>
+								<td>30</td>
+								<td>1号演出厅</td>
 								<td>
 									<div class="btn-group">
 									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -217,28 +232,9 @@
 									  <ul class="dropdown-menu">
 									    <li><a href="#">编辑</a></li>
 									    <li><a href="#">删除</a></li>
-									    <li><a href="#">锁定</a></li>
 									    <li role="separator" class="divider"></li>
-									    <li><a href="#">修改密码</a></li>
-									  </ul>
-									</div>									
-								</td>
-							</tr>
-							<tr>
-								<th>8</th>
-								<td>邹丹阳</td>
-								<td>2343324234@qq.com</td>
-								<td>
-									<div class="btn-group">
-									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									    操作 <span class="caret"></span>
-									  </button>
-									  <ul class="dropdown-menu">
-									    <li><a href="#">编辑</a></li>
-									    <li><a href="#">删除</a></li>
 									    <li><a href="#">锁定</a></li>
-									    <li role="separator" class="divider"></li>
-									    <li><a href="#">修改密码</a></li>
+									   
 									  </ul>
 									</div>									
 								</td>

@@ -18,37 +18,36 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a href="#" class="navbar-brand">Liuang Admin</a>
+					<a href="#" class="navbar-brand">特特特影院后台管理系统</a>
 				</div>
 				<!--小屏幕按钮和导航logo-->
 				
 				<!--导航-->
 				<div class="navbar-collapse collapse" >
 					<ul class="nav navbar-nav ">
-						<li ><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
-						<li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;标签管理</a></li>
+						<li ><a href="demo_1.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+						<li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;剧目管理</a></li>
+						<li><a href="demo_4_content.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;演出厅管理</a></li>
+			
 						
 					</ul>
 					
 					<ul class="nav navbar-nav navbar-right">
 							<li class="dropdown">
 								<a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		    					admin
+		    					系统管理员
 		    					<span class="caret"></span>
 	 						 	</a>
 							  	<ul class="dropdown-menu" aria-labelledby="dLabel">
-							   	<li><a href="#"><span class="glyphicon glyphicon-th"></span>&nbsp;前台首页</a></li>
-							   	<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;个人主页</a></li>
-							   	<li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;个人设置</a></li>
-							   	<li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;账户中心</a></li>
-							   	<li><a href="#"><span class="glyphicon glyphicon-star"></span>&nbsp;我的收藏</a></li>
+							   	<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;经理</a></li>
+							   	<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;售票员</a></li>
+							   	
 							  	</ul>
 							</li>
 						
 						<li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
-					
+						
+						
 					</ul>
 				</div>
 				<!--导航-->
@@ -61,26 +60,26 @@
 			<div  class="row">
 				<div class="col-md-2">
 					<div class="list-group">
-						<a href="#" class="list-group-item ">用户管理</a>
-						<a href="#" class="list-group-item active">用户搜索</a>
-						<a href="#" class="list-group-item" role="button" data-toggle="modal" data-target="#myModal">用户添加</a>
+						<a href="demo_2.html" class="list-group-item ">剧目管理</a>
+						<a href="demo_3_search.html" class="list-group-item active">剧目搜索</a>
+						<a href="#myModal" class="list-group-item" role="button" data-toggle="modal" data-target="#myModal">剧目添加</a>
 					</div>
 				</div>
 				<div class="col-md-10">
 					<div class="page-header">
-						<h4>用户管理</h6>
+						<h4>剧目管理</h6>
 					</div>
 					<ul class="nav nav-tabs">
 						<li >
-							<a href="#">用户管理</a>
+							<a href="demo_2.html">剧目管理</a>
 						</li >
 						<li  class="active">
-							<a href="#" role="button">用户搜索</a>
+							<a href="demo_3_search.html" role="button">剧目搜索</a>
 						</li>
 						<li>
 							
 
-							<a href="#"  data-toggle="modal" data-target="#myModal">用户添加</a>
+							<a href="#myModal"  data-toggle="modal" data-target="#myModal">剧目添加</a>
 						</li>
 					</ul>
 					<form action="#" class="user_search">
@@ -92,20 +91,20 @@
 								支持模糊搜索和匹配搜索，匹配搜索使用*代替！
 							</div>
 							<div class="form-group">
-								<label for="name">用户名：</label>
-								<input type="text" id="name" class="form-control" placeholder="请输入要查找的用户名" />
+								<label for="name">ID</label>
+								<input type="text" id="name" class="form-control" placeholder="请输入要查找的电影ID" />
 							</div>
 							<div class="form-group">
-								<label for="name">UID：</label>
-								<input type="text" id="name" class="form-control" placeholder="请输入要查找的UID" />
+								<label for="name">电影名</label>
+								<input type="text" id="name" class="form-control" placeholder="请输入要查找的电影" />
 							</div>
 							<div class="form-group">
-								<label>选择用户组：</label>
+								<label>类型</label>
 								<select class="form-control">
-									<option>限制会员</option>
-									<option>注册用户</option>
-									<option>中级会员</option>
-									<option>高级会员</option>
+									<option>爱情 </option>
+									<option>剧情</option>
+									<option>动作</option>
+									<option>恐怖</option>
 								</select>
 							</div>
 							<div class="form-group">
@@ -125,32 +124,32 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">添加用户</h4>
+				        <h4 class="modal-title" id="myModalLabel">添加剧目</h4>
 				      </div>
 				      <div class="modal-body">
 				       <div class="form-group">
-				       	<label for="name">用户名</label>
-						<input type="text" class="form-control" placeholder="请输入用户名" />
+				       	<label for="name">ID</label>
+						<input type="text" class="form-control" placeholder="请输入ID" />
 				       </div>
 				        <div class="form-group">
-				       	<label for="name">密码</label>
-						<input type="password" class="form-control" placeholder="请输入密码" />
+				       	<label for="name">电影</label>
+						<input type="text" class="form-control" placeholder="请输入电影名" />
 				       </div>
 				        <div class="form-group">
-				       	<label for="name">确认用户密码</label>
-						<input type="password" class="form-control" placeholder="请确认用户密码" />
+				       	<label for="name">票价</label>
+						<input type="text" class="form-control" placeholder="请确认票价" />
 				       </div>
 				        <div class="form-group">
-				       	<label for="name">邮箱</label>
-						<input type="email" class="form-control" placeholder="请输入邮箱" />
+				       	<label for="name">演出厅</label>
+						<input type="text" class="form-control" placeholder="请输入加入的演出厅" />
 				       </div>
 				        <div class="form-group">
-				       	<label for="name">所属用户组</label>
+				       	<label for="name">类型</label>
 						<select class="form-control">
-							<option>注册用户</option>
-							<option>初级会员</option>
-							<option>中级会员</option>
-							<option>高级会员</option>
+							<option>爱情</option>
+							<option>动作</option>
+							<option>喜剧</option>
+							<option>恐怖</option>
 							
 						</select>
 				       </div>
