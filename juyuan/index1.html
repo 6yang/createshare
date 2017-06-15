@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/juyuan.css" />
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="js/jquery-ui.js" ></script>
+		<script type="text/javascript" src="js/jquery.seat-charts.js" ></script>
+		<script type="text/javascript" src="js/dialog.js" ></script>
+		<script type="text/javascript" src="js/show.js" ></script>
+		<link rel="stylesheet" href="css/jquery.seat-charts.css" />
+		
+	</head>
+	<body>
+		<div id="name">
+			<h1 style="padding-left: 50px;padding-top: 40px;color: red;">16088剧院管理系统</h1>
+			<div class="td"><h2>退出</h2></div>
+		</div>
+		<div id="nav">
+			<ul>
+				<li class="nav_ticket">
+					<div><a>售票管理</a></div>
+				</li>
+				<li class="nav_film">
+					<div><a>影片管理</a></div>
+				</li>
+				<li class="nav_sale">
+					<div><a>销售管理</a></div>
+				</li>
+				<li class="nav_studio">
+					<div><a>影厅管理</a></div>
+				</li>
+				<li class="nav_user">
+					<div><a>用户管理</a></div>
+				</li>
+			</ul>
+		</div>
+		<div id="content">
+			<div class="con_ticket" >
+				<div class="ticket_showfilm">
+					<div class="t_select_film_name"><a>选择影片</a></div>
+					<div class="t_show_film_table"></div>
+				</div>
+				<div class="ticket_selectseats">
+					<div class="t_select_plan_bar">
+						<div class="t_back_bt"></div>
+						<div class="t_plan_name"><a></a></div>   
+					</div>
+					<div class="t_show_plan_table"></div>
+				</div>
+				<div class="ticket_success">
+					<div class="t_select_char_bar">
+						<div  class="char_back_bt"></div>
+						<div class="char_film_name"><a></a></div>
+					</div>
+					<div class="t_char_cont">
+						<div class="set_char">
+							<div class="set_sceen"><a>屏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;幕</a></div>
+							<div class="set_seat"></div>
+						</div>
+						<div class="sum_ticket_all">
+							<h1 class="c_film_name"></h1><br /><br />
+							<span class="c_film_time"></span><br /><br />
+							<span class="c_film_studio"></span><br /><br />
+							<span class="c_film_price">票价：</span><br /><br />
+							<span>座位：</span><br /><br />
+							<ul class="c_film_row_col"></ul><br /><br />
+							<span class="c_film_price_sum"></span><br /><br />
+							<button class="c_film_buy">购买</button><br /><br />
+							<div id="char_tip"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="con_film">
+				<div class="show_film">
+						<ul>
+							<li class="f_film_oper">影片管理</li>
+							<li class="f_film_play">演出计划管理</li>
+						</ul>
+				</div>
+				<div class="show_film_table">
+					<div class="show_play_oper">
+						<div class="f_show_oper">
+							<ul>
+								<li class="f_film_oper_add">添加影片</li>
+								<li class="f_film_oper_drop">删除影片</li>
+								<li class="f_film_oper_change">修改影片</li>
+							</ul>
+							<div id="f_add_film" title="添加影片">
+								<label>
+									影片ID:&nbsp;&nbsp;&nbsp;<input type="text" class="f_a_id" />
+								</label><br /><br />
+								<label>
+									影片类型:<select class="f_a_type">
+										<option >爱情</option>
+										<option >喜剧</option>
+										<option >动作</option>
+										<option >剧情</option>
+										<option >科幻</option>
+										<option >恐怖</option>
+										<option >动画</option>
+									</select>
+								</label><br /><br />
+								<label>
+									影片语言:<select class="f_a_lang">
+										<option >国语</option>
+										<option >粤语</option>
+										<option >英语</option>
+										<option >日语</option>
+										<option >韩语</option>
+										<option >法语</option>
+									</select>
+									
+								</label><br /><br />
+								<label>
+									影片名称:<input type="text" class="f_a_name" />
+								</label><br /><br />
+								<label>
+									影片描述:<input type="text" class="f_a_intr" />
+								</label><br /><br />
+								<label>
+									影片图片:<input type="file" class="f_a_img" />
+								</label><br /><br />
+								<label>
+									影片长度:<input type="text" class="f_a_length" />
+								</label><br /><br />
+								<label>
+									影片价格:<input type="text" class="f_a_price" />
+								</label><br /><br />
+								<label>
+									影片状态:<select  class="f_a_status">
+										<option>未上映</option>
+										<option>上映</option>
+									</select>
+									
+								</label><br /><br />
+							</div>
+							<div id="f_drop_film" title="删除影片"></div>
+							<div id="f_change_film" title="修改影片">
+								<div id="f_change_film_select"></div><br />
+								<div id="f_change_film_other">
+									<label>
+									影片类型:<select class="f_a_type_o">
+										<option >爱情</option>
+										<option >喜剧</option>
+										<option >动作</option>
+										<option >剧情</option>
+										<option >科幻</option>
+										<option >恐怖</option>
+										<option >动画</option>
+									</select>
+								</label><br /><br />
+								<label>
+									影片语言:<select class="f_a_lang_o">
+										<option >国语</option>
+										<option >粤语</option>
+										<option >英语</option>
+										<option >日语</option>
+										<option >韩语</option>
+										<option >法语</option>
+									</select>
+									
+								</label><br /><br />
+								<label>
+									影片描述:<input type="text" class="f_a_intr_o" />
+								</label><br /><br />
+								<label>
+									影片图片:<input type="file" class="f_a_img_o" />
+								</label><br /><br />
+								<label>
+									影片长度:<input type="text" class="f_a_length_o" />
+								</label><br /><br />
+								<label>
+									影片价格:<input type="text" class="f_a_price_o" />
+								</label><br /><br />
+								<label>
+									影片状态:<select  class="f_a_status_o">
+										<option>未上映</option>
+										<option>上映</option>
+									</select>
+									
+								</label><br /><br />
+								</div>
+							</div>
+							
+						</div>
+						<div class="f_show_play">
+							<ul>
+								<li class="f_film_play_add">添加演出计划</li>
+								<li class="f_film_play_drop">删除演出计划</li>
+								<li class="f_film_play_change">修改演出计划</li>
+							</ul>
+							<div id="f_add_plan" title="添加演出计划">
+								<div id="f_add_input">
+									<label>
+										演出计划：<input type="text" class="f_a_p_id"/>
+									</label><br /><br />
+									<label>
+										演出时间：<input type="text" class="f_a_p_time"/>
+									</label><br /><br />
+									<label>
+										演出票价：<input type="text" class="f_a_p_price"/>
+									</label><br /><br />
+									
+								</div>
+								<div id="f_add_select_studio"></div><br />
+							</div>
+							<div id="f_drop_plan" title="删除演出计划"></div>
+							<div id="f_change_plan" title="修改演出计划">
+								<div id="f_change_select"></div>
+								<div id="f_change_input">
+									<label>
+										演出时间：<input type="text" class="f_c_p_time"/>
+									</label><br /><br />
+									<label>
+										演出票价：<input type="text" class="f_c_p_price"/>
+									</label><br /><br />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="show_oper_table"></div>
+					<div class="show_play_table"></div>
+					
+				</div>	
+			</div>
+			<div class="con_studio">
+				<div class="show_studio">
+					<div class="studio_operation">
+						<ul>
+							<li class="add_studio">添加演出厅</li>
+							<li class="drop_studio">删除演出厅</li>
+							<li class="oper_studio">修改演出厅</li>
+						</ul>
+						<div id="add_studio_dialog" title="添加演出厅">
+							<label>演出厅I  D:&nbsp;&nbsp;
+								<input type="text" name="stu_id"  class="stu_id"/>
+							</label><br /><br />
+							<label>演出厅名称:
+								<input type="text" name="stu_name" class="stu_name"/>
+							</label><br /><br />
+							<label>演出厅行数:
+								<input type="text" name="stu_row" class="stu_row"/>
+							</label><br /><br />
+							<label>演出厅列数:
+								<input type="text" name="stu_col" class="stu_col"/>
+							</label><br /><br />
+							<label>
+								备注：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="stu_beizhu" rows="5" class="stu_beizhu"></textarea>
+							</label>
+						</div>
+						<div id="drop_studio_dialog" title="删除演出厅">	</div>
+						<div id="oper_studio_dialog" title="修改演出厅">
+							<div id="oper_id"></div><br />
+							<div id="oper_list">
+								<label>演出厅名称:&nbsp;&nbsp;&nbsp;
+								<input type="text"  class="oper_stu_name"/>
+							</label><br /><br />
+							<label>演出厅行数:&nbsp;&nbsp;&nbsp;
+								<input type="text" name="stu_row" class="oper_stu_row"/>
+							</label><br /><br />
+							<label>演出厅列数:&nbsp;&nbsp;&nbsp;
+								<input type="text" name="stu_col" class="oper_stu_col"/>
+							</label><br /><br />
+							<label>
+								备注：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea  rows="5" class="oper_stu_beizhu"></textarea>
+							</label>
+							</div>
+						</div>
+						
+					</div>
+					<div class="studio_table">
+						
+					</div>
+				</div>
+			</div>
+			<div class="con_sale">
+				<div class="show_sale">
+					销售数据
+				</div>
+			</div>
+			<div class="con_user">
+				<div class="nav_user_oper">
+					<div class="add_user">添加用户</div>
+					<div class="drop_user">删除用户</div>
+					<div class="change_user">修改用户</div>
+					
+				</div>
+				<div class="show_user">
+					
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
